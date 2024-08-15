@@ -1,0 +1,509 @@
+[
+    {
+        "model": "student_management_app.students",
+        "pk": 1,
+        "fields": {
+            "admin": 5,
+            "gender": "Female",
+            "profile_pic": "/media/Vijay%20Thapa%20Pro.jpg",
+            "address": "Maxime voluptates porro iste temporibus velit odio",
+            "course_id": 3,
+            "session_year_id": 1,
+            "created_at": "2020-06-26T16:07:55.683Z",
+            "updated_at": "2020-07-07T14:44:13.981Z"
+        }
+    },
+    {
+        "model": "student_management_app.students",
+        "pk": 2,
+        "fields": {
+            "admin": 6,
+            "gender": "Female",
+            "profile_pic": "",
+            "address": "Error quia tempora est dolor libero qui iusto ea",
+            "course_id": 3,
+            "session_year_id": 1,
+            "created_at": "2020-06-26T16:08:04.811Z",
+            "updated_at": "2020-06-26T16:08:04.822Z"
+        }
+    },
+    {
+        "model": "student_management_app.students",
+        "pk": 3,
+        "fields": {
+            "admin": 7,
+            "gender": "Female",
+            "profile_pic": "",
+            "address": "Consequatur sed reprehenderit exercitationem fug",
+            "course_id": 4,
+            "session_year_id": 2,
+            "created_at": "2020-07-01T09:01:18.413Z",
+            "updated_at": "2020-07-01T09:01:18.438Z"
+        }
+    },
+    {
+        "model": "student_management_app.students",
+        "pk": 4,
+        "fields": {
+            "admin": 9,
+            "gender": "Female",
+            "profile_pic": "",
+            "address": "Quis soluta sed ipsum officia excepturi et sint i",
+            "course_id": 2,
+            "session_year_id": 2,
+            "created_at": "2020-07-05T11:55:02.981Z",
+            "updated_at": "2020-07-05T11:55:02.989Z"
+        }
+    },
+    {
+        "model": "student_management_app.students",
+        "pk": 6,
+        "fields": {
+            "admin": 11,
+            "gender": "Female",
+            "profile_pic": "",
+            "address": "Vel in quis aut velit obcaecati et adipisicing bla",
+            "course_id": 3,
+            "session_year_id": 2,
+            "created_at": "2020-07-05T11:55:10.168Z",
+            "updated_at": "2020-07-05T11:55:10.177Z"
+        }
+    },
+    {
+        "model": "student_management_app.students",
+        "pk": 7,
+        "fields": {
+            "admin": 12,
+            "gender": "Female",
+            "profile_pic": "",
+            "address": "Minus mollit laudantium quaerat aut minus id iru",
+            "course_id": 2,
+            "session_year_id": 2,
+            "created_at": "2020-07-05T11:55:13.538Z",
+            "updated_at": "2020-07-05T11:55:13.545Z"
+        }
+    },
+    {
+        "model": "student_management_app.students",
+        "pk": 8,
+        "fields": {
+            "admin": 13,
+            "gender": "Female",
+            "profile_pic": "",
+            "address": "Et est voluptatum asperiores ipsum iure cumque qua",
+            "course_id": 2,
+            "session_year_id": 2,
+            "created_at": "2020-07-05T11:55:16.731Z",
+            "updated_at": "2020-07-05T11:55:16.739Z"
+        }
+    },
+    {
+        "model": "student_management_app.students",
+        "pk": 10,
+        "fields": {
+            "admin": 17,
+            "gender": "Female",
+            "profile_pic": "",
+            "address": "Non necessitatibus voluptas laboriosam labore lab",
+            "course_id": 3,
+            "session_year_id": 2,
+            "created_at": "2020-07-07T15:15:37.211Z",
+            "updated_at": "2020-07-07T15:15:37.218Z"
+        }
+    },
+    {
+        "model": "student_management_app.attendance",
+        "pk": 1,
+        "fields": {
+            "subject_id": 2,
+            "attendance_date": "2020-06-26",
+            "session_year_id": 1,
+            "created_at": "2020-06-26T16:08:33.616Z",
+            "updated_at": "2020-06-26T16:08:33.616Z"
+        }
+    },
+    {
+        "model": "student_management_app.attendance",
+        "pk": 2,
+        "fields": {
+            "subject_id": 2,
+            "attendance_date": "2020-06-26",
+            "session_year_id": 1,
+            "created_at": "2020-06-26T16:17:21.835Z",
+            "updated_at": "2020-06-26T16:17:21.835Z"
+        }
+    },
+    {
+        "model": "student_management_app.attendance",
+        "pk": 3,
+        "fields": {
+            "subject_id": 2,
+            "attendance_date": "2020-06-26",
+            "session_year_id": 1,
+            "created_at": "2020-06-26T16:24:18.201Z",
+            "updated_at": "2020-06-26T16:24:18.201Z"
+        }
+    },
+    {
+        "model": "student_management_app.attendance",
+        "pk": 4,
+        "fields": {
+            "subject_id": 2,
+            "attendance_date": "2020-06-26",
+            "session_year_id": 1,
+            "created_at": "2020-06-26T16:27:08.896Z",
+            "updated_at": "2020-06-26T16:27:08.896Z"
+        }
+    },
+    {
+        "model": "student_management_app.attendance",
+        "pk": 5,
+        "fields": {
+            "subject_id": 2,
+            "attendance_date": "2020-06-25",
+            "session_year_id": 1,
+            "created_at": "2020-06-26T16:30:06.433Z",
+            "updated_at": "2020-06-26T16:30:06.433Z"
+        }
+    },
+    {
+        "model": "student_management_app.attendance",
+        "pk": 6,
+        "fields": {
+            "subject_id": 1,
+            "attendance_date": "2020-06-26",
+            "session_year_id": 1,
+            "created_at": "2020-06-26T17:57:00.495Z",
+            "updated_at": "2020-06-26T17:57:00.495Z"
+        }
+    },
+    {
+        "model": "student_management_app.attendancereport",
+        "pk": 1,
+        "fields": {
+            "student_id": 1,
+            "attendance_id": 1,
+            "status": false,
+            "created_at": "2020-06-26T16:08:33.624Z",
+            "updated_at": "2020-06-30T16:05:09.120Z"
+        }
+    },
+    {
+        "model": "student_management_app.attendancereport",
+        "pk": 2,
+        "fields": {
+            "student_id": 2,
+            "attendance_id": 1,
+            "status": false,
+            "created_at": "2020-06-26T16:08:33.628Z",
+            "updated_at": "2020-06-30T16:05:09.146Z"
+        }
+    },
+    {
+        "model": "student_management_app.attendancereport",
+        "pk": 3,
+        "fields": {
+            "student_id": 1,
+            "attendance_id": 2,
+            "status": true,
+            "created_at": "2020-06-26T16:17:21.845Z",
+            "updated_at": "2020-06-26T16:17:21.845Z"
+        }
+    },
+    {
+        "model": "student_management_app.attendancereport",
+        "pk": 4,
+        "fields": {
+            "student_id": 2,
+            "attendance_id": 2,
+            "status": true,
+            "created_at": "2020-06-26T16:17:21.849Z",
+            "updated_at": "2020-06-26T16:17:21.849Z"
+        }
+    },
+    {
+        "model": "student_management_app.attendancereport",
+        "pk": 5,
+        "fields": {
+            "student_id": 1,
+            "attendance_id": 3,
+            "status": true,
+            "created_at": "2020-06-26T16:24:18.211Z",
+            "updated_at": "2020-06-26T16:24:18.211Z"
+        }
+    },
+    {
+        "model": "student_management_app.attendancereport",
+        "pk": 6,
+        "fields": {
+            "student_id": 2,
+            "attendance_id": 3,
+            "status": true,
+            "created_at": "2020-06-26T16:24:18.215Z",
+            "updated_at": "2020-06-26T16:24:18.215Z"
+        }
+    },
+    {
+        "model": "student_management_app.attendancereport",
+        "pk": 7,
+        "fields": {
+            "student_id": 1,
+            "attendance_id": 4,
+            "status": true,
+            "created_at": "2020-06-26T16:27:08.904Z",
+            "updated_at": "2020-06-26T16:27:08.904Z"
+        }
+    },
+    {
+        "model": "student_management_app.attendancereport",
+        "pk": 8,
+        "fields": {
+            "student_id": 2,
+            "attendance_id": 4,
+            "status": true,
+            "created_at": "2020-06-26T16:27:08.908Z",
+            "updated_at": "2020-06-26T16:27:08.908Z"
+        }
+    },
+    {
+        "model": "student_management_app.attendancereport",
+        "pk": 9,
+        "fields": {
+            "student_id": 1,
+            "attendance_id": 5,
+            "status": true,
+            "created_at": "2020-06-26T16:30:06.444Z",
+            "updated_at": "2020-06-26T16:30:06.444Z"
+        }
+    },
+    {
+        "model": "student_management_app.attendancereport",
+        "pk": 10,
+        "fields": {
+            "student_id": 2,
+            "attendance_id": 5,
+            "status": true,
+            "created_at": "2020-06-26T16:30:06.448Z",
+            "updated_at": "2020-06-26T16:30:06.448Z"
+        }
+    },
+    {
+        "model": "student_management_app.attendancereport",
+        "pk": 11,
+        "fields": {
+            "student_id": 1,
+            "attendance_id": 6,
+            "status": true,
+            "created_at": "2020-06-26T17:57:00.505Z",
+            "updated_at": "2020-07-05T08:23:12.108Z"
+        }
+    },
+    {
+        "model": "student_management_app.attendancereport",
+        "pk": 12,
+        "fields": {
+            "student_id": 2,
+            "attendance_id": 6,
+            "status": false,
+            "created_at": "2020-06-26T17:57:00.508Z",
+            "updated_at": "2020-07-05T08:23:12.118Z"
+        }
+    },
+    {
+        "model": "student_management_app.leavereportstudent",
+        "pk": 1,
+        "fields": {
+            "student_id": 1,
+            "leave_date": "2020-07-10",
+            "leave_message": "For Marriage",
+            "leave_status": 1,
+            "created_at": "2020-07-01T06:01:04.097Z",
+            "updated_at": "2020-07-03T08:01:17.371Z"
+        }
+    },
+    {
+        "model": "student_management_app.leavereportstudent",
+        "pk": 2,
+        "fields": {
+            "student_id": 3,
+            "leave_date": "2020-07-25",
+            "leave_message": "Sick Leave",
+            "leave_status": 2,
+            "created_at": "2020-07-03T07:38:05.559Z",
+            "updated_at": "2020-07-03T08:10:13.513Z"
+        }
+    },
+    {
+        "model": "student_management_app.leavereportstudent",
+        "pk": 3,
+        "fields": {
+            "student_id": 3,
+            "leave_date": "2020-07-31",
+            "leave_message": "Marriage Leave for 2 days.",
+            "leave_status": 0,
+            "created_at": "2020-07-03T08:11:18.247Z",
+            "updated_at": "2020-07-03T08:11:18.247Z"
+        }
+    },
+    {
+        "model": "student_management_app.leavereportstaff",
+        "pk": 1,
+        "fields": {
+            "staff_id": 3,
+            "leave_date": "2020-06-30",
+            "leave_message": "Attend Family Meeting",
+            "leave_status": 1,
+            "created_at": "2020-06-27T07:33:29.720Z",
+            "updated_at": "2020-07-03T08:09:36.028Z"
+        }
+    },
+    {
+        "model": "student_management_app.leavereportstaff",
+        "pk": 2,
+        "fields": {
+            "staff_id": 3,
+            "leave_date": "2004-01-01",
+            "leave_message": "Eum duis sed qui a c",
+            "leave_status": 2,
+            "created_at": "2020-06-27T07:34:25.290Z",
+            "updated_at": "2020-07-03T08:10:44.983Z"
+        }
+    },
+    {
+        "model": "student_management_app.leavereportstaff",
+        "pk": 3,
+        "fields": {
+            "staff_id": 3,
+            "leave_date": "1999-03-23",
+            "leave_message": "Laboris illo debitis",
+            "leave_status": 0,
+            "created_at": "2020-06-27T07:34:39.272Z",
+            "updated_at": "2020-06-27T07:34:39.272Z"
+        }
+    },
+    {
+        "model": "student_management_app.leavereportstaff",
+        "pk": 4,
+        "fields": {
+            "staff_id": 3,
+            "leave_date": "2020-06-30",
+            "leave_message": "Attend Family Event",
+            "leave_status": 0,
+            "created_at": "2020-06-27T07:35:06.933Z",
+            "updated_at": "2020-06-27T07:35:06.933Z"
+        }
+    },
+    {
+        "model": "student_management_app.feedbackstudent",
+        "pk": 1,
+        "fields": {
+            "student_id": 1,
+            "feedback": "Please bring some guest lecturers.",
+            "feedback_reply": "We'll try our best.",
+            "created_at": "2020-07-01T06:04:43.363Z",
+            "updated_at": "2020-07-01T10:29:48.155Z"
+        }
+    },
+    {
+        "model": "student_management_app.feedbackstudent",
+        "pk": 2,
+        "fields": {
+            "student_id": 3,
+            "feedback": "Test Feedback from New Student",
+            "feedback_reply": "Tested Successfully. Thanks!",
+            "created_at": "2020-07-01T09:01:45.379Z",
+            "updated_at": "2020-07-01T10:30:16.325Z"
+        }
+    },
+    {
+        "model": "student_management_app.feedbackstudent",
+        "pk": 3,
+        "fields": {
+            "student_id": 1,
+            "feedback": "Online courses should be interactive.\r\nAnd lectures should be recorded and published, so that the students who have missed the live zoom class can take the classes later.",
+            "feedback_reply": "",
+            "created_at": "2020-07-08T10:53:56.474Z",
+            "updated_at": "2020-07-08T10:53:56.475Z"
+        }
+    },
+    {
+        "model": "student_management_app.feedbackstaffs",
+        "pk": 1,
+        "fields": {
+            "staff_id": 3,
+            "feedback": "Adding Smart board",
+            "feedback_reply": "We'll consider it in new Session. Thanks!",
+            "created_at": "2020-06-27T08:26:29.094Z",
+            "updated_at": "2020-07-01T10:37:49.494Z"
+        }
+    },
+    {
+        "model": "student_management_app.feedbackstaffs",
+        "pk": 2,
+        "fields": {
+            "staff_id": 3,
+            "feedback": "Test Feedback 2",
+            "feedback_reply": "Test Reply.",
+            "created_at": "2020-07-01T10:35:37.901Z",
+            "updated_at": "2020-07-01T10:37:15.897Z"
+        }
+    },
+    {
+        "model": "student_management_app.feedbackstaffs",
+        "pk": 3,
+        "fields": {
+            "staff_id": 3,
+            "feedback": "This is Third Feedback.",
+            "feedback_reply": "Okay, I'll Reply here.",
+            "created_at": "2020-07-01T10:39:41.836Z",
+            "updated_at": "2020-07-01T10:39:59.592Z"
+        }
+    },
+    {
+        "model": "student_management_app.feedbackstaffs",
+        "pk": 4,
+        "fields": {
+            "staff_id": 3,
+            "feedback": "We need a better and secure Learning Management System.\r\nIt'll help to deliver educational contents easily and also helps to monitor the progress of students.",
+            "feedback_reply": "",
+            "created_at": "2020-07-08T10:52:47.685Z",
+            "updated_at": "2020-07-08T10:52:47.685Z"
+        }
+    },
+    {
+        "model": "student_management_app.studentresult",
+        "pk": 1,
+        "fields": {
+            "student_id": 1,
+            "subject_id": 1,
+            "subject_exam_marks": 60.0,
+            "subject_assignment_marks": 55.0,
+            "created_at": "2020-07-07T05:40:29.583Z",
+            "updated_at": "2020-07-07T14:46:47.159Z"
+        }
+    },
+    {
+        "model": "student_management_app.studentresult",
+        "pk": 2,
+        "fields": {
+            "student_id": 6,
+            "subject_id": 1,
+            "subject_exam_marks": 68.0,
+            "subject_assignment_marks": 50.0,
+            "created_at": "2020-07-07T05:41:40.091Z",
+            "updated_at": "2020-07-07T05:41:40.091Z"
+        }
+    },
+    {
+        "model": "student_management_app.studentresult",
+        "pk": 3,
+        "fields": {
+            "student_id": 2,
+            "subject_id": 1,
+            "subject_exam_marks": 60.0,
+            "subject_assignment_marks": 50.0,
+            "created_at": "2020-07-07T05:48:19.201Z",
+            "updated_at": "2020-07-07T05:48:19.201Z"
+        }
+    }
+]
