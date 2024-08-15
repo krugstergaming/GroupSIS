@@ -347,6 +347,13 @@ def add_student_save(request):
             session_year_id = form.cleaned_data['session_year_id']
             course_id = form.cleaned_data['course_id']
             gender = form.cleaned_data['gender']
+            is_enrolled = form.cleaned_data['is_enrolled']
+            nickname = form.cleaned_data['nickname']
+            nationality = form.cleaned_data['nationality']
+            religion = form.cleaned_data['religion']
+            # family_rank = form.cleaned_data['family_rank']
+            # father = form.cleaned_data['father']
+            # mother = form.cleaned_data['mother']
 
             # Getting Profile Pic first
             # First Check whether the file is selected or not
@@ -363,6 +370,12 @@ def add_student_save(request):
             try:
                 user = CustomUser.objects.create_user(username=username, password=password, email=email, first_name=first_name, last_name=last_name, user_type=3)
                 user.students.address = address
+                user.students.nickname = nickname
+                user.students.nationality = nationality
+                user.students.religion = religion
+                # user.students.family_rank = family_rank
+                # user.students.father = father
+                # user.students.mother = mother
 
                 course_obj = Courses.objects.get(id=course_id)
                 user.students.course_id = course_obj
@@ -371,6 +384,8 @@ def add_student_save(request):
                 user.students.session_year_id = session_year_obj
 
                 user.students.gender = gender
+                user.students.is_enrolled = is_enrolled
+
                 user.students.profile_pic = profile_pic_url
                 user.save()
                 messages.success(request, "Student Added Successfully!")
