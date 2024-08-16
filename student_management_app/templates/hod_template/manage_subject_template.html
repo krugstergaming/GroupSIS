@@ -59,7 +59,7 @@
                             <table class="table table-hover text-nowrap">
                             <thead>
                                 <tr>
-                                <th>ID</th>
+                                <!-- <th>ID</th> -->
                                 <th>Subject Name</th>
                                 <th>Course</th>
                                 <th>Staff</th>
@@ -71,7 +71,7 @@
                             <tbody>
                                 {% for subject in subjects %}
                                 <tr>
-                                <td>{{ subject.id }}</td>
+                                <!-- <td>{{ subject.id }}</td> -->
                                 <td>{{ subject.subject_name }}</td>
                                 <td>{{ subject.course_id.course_name }}</td>
                                 <td>{{ subject.staff_id.first_name }} {{ subject.staff_id.last_name }}</td>

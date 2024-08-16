@@ -58,25 +58,25 @@
                         <table class="table table-hover text-nowrap">
                             <thead>
                                 <tr>
-                                    <th>ID</th>
+                                    <!-- <th>ID</th> -->
                                     <th>First Name</th>
                                     <th>Last Name</th>
                                     <th>Nickname</th>
-                                    <th>Username</th>
-                                    <th>Email</th>
+                                    <!-- <th>Username</th> -->
+                                    <!-- <th>Email</th> -->
                                     <th>Address</th>
                                     <th>Gender</th>
-                                    <th>Nationality</th>
+                                    <!-- <th>Nationality</th> -->
                                     <th>Religion</th>
                                     <!-- <th>Family Rank</th>
                                     <th>Father</th>
                                     <th>Mother</th> -->
                                     <th>Profile Pic</th>
-                                    <th>Start Year</th>
-                                    <th>End Year</th>
-                                    <th>Course</th>
-                                    <th>Last Login</th>
-                                    <th>Date Joined</th>
+                                    <!-- <th>Start Year</th> -->
+                                    <!-- <th>End Year</th> -->
+                                    <th>Year-Level</th>
+                                    <!-- <th>Last Login</th> -->
+                                    <!-- <th>Date Joined</th> -->
                                     <th>Action</th>
                                 </tr>
                             </thead>
@@ -84,25 +84,25 @@
                                 {% for student in students %}
                                     {% if student.is_enrolled %}
                                     <tr>
-                                        <td>{{ student.admin.id }}</td>
+                                        <!-- <td>{{ student.admin.id }}</td> -->
                                         <td>{{ student.admin.first_name }}</td>
                                         <td>{{ student.admin.last_name }}</td>
                                         <td>{{ student.nickname }}</td>
-                                        <td>{{ student.admin.username }}</td>
-                                        <td>{{ student.admin.email }}</td>
+                                        <!-- <td>{{ student.admin.username }}</td> -->
+                                        <!-- <td>{{ student.admin.email }}</td> -->
                                         <td>{{ student.address }}</td>
                                         <td>{{ student.gender }}</td>
-                                        <td>{{ student.nationality }}</td>
+                                        <!-- <td>{{ student.nationality }}</td> -->
                                         <td>{{ student.religion }}</td>
                                         <!-- <td>{{ student.family_rank }}</td>
                                         <td>{{ student.father }}</td>
                                         <td>{{ student.mother }}</td> -->
                                         <td><img src="{{ student.profile_pic }}" style="width: 100px;" /></td>
-                                        <td>{{ student.session_year_id.session_start_year }}</td>
-                                        <td>{{ student.session_year_id.session_end_year }}</td>
+                                        <!-- <td>{{ student.session_year_id.session_start_year }}</td> -->
+                                        <!-- <td>{{ student.session_year_id.session_end_year }}</td> -->
                                         <td>{{ student.course_id.course_name }}</td>
-                                        <td>{{ student.admin.last_login }}</td>
-                                        <td>{{ student.admin.date_joined }}</td>
+                                        <!-- <td>{{ student.admin.last_login }}</td> -->
+                                        <!-- <td>{{ student.admin.date_joined }}</td> -->
                                         <td>
                                             <a href="{% url 'edit_student' student.admin.id %}" class="btn btn-success">Edit</a> 
                                             <a href="{% url 'delete_student' student.admin.id %}" class="btn btn-danger">Delete</a>
