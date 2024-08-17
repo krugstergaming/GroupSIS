@@ -8,7 +8,7 @@ if defined _OLD_CODEPAGE (
     "%SystemRoot%\System32\chcp.com" 65001 > nul
 )
 
-set VIRTUAL_ENV=C:\Users\arla1\OneDrive\Desktop\Repo-SIS\Group-2---SIS\venv
+set VIRTUAL_ENV=C:\Users\may ari\Desktop\PythonSIS\venv
 
 if not defined PROMPT set PROMPT=$P$G
 
