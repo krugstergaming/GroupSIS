@@ -494,16 +494,26 @@ def edit_student_save(request):
             return redirect('/edit_student/'+student_id)
 
 
-def delete_student(request, student_id):
-    student = Students.objects.get(admin=student_id)
+def update_enrollment_status(request, student_id):
     try:
-        student.delete()
-        messages.success(request, "Student Deleted Successfully.")
+        student = Students.objects.get(admin=student_id)
+        
+        # Toggle the enrollment status
+        student.is_enrolled = not student.is_enrolled
+        student.save()
+        
+        if student.is_enrolled:
+            messages.success(request, f"Student {student.admin.username} has been enrolled.")
+        else:
+            messages.success(request, f"Student {student.admin.username} has been unenrolled.")
+            
         return redirect('manage_student')
-    except:
-        messages.error(request, "Failed to Delete Student.")
+    except Students.DoesNotExist:
+        messages.error(request, "Student not found.")
         return redirect('manage_student')
-
+    except Exception as e:
+        messages.error(request, f"Failed to update enrollment status: {str(e)}")
+        return redirect('manage_student')
 
 def add_subject(request):
     yearlevels = YearLevel.objects.all()

@@ -1,7 +1,7 @@
 {% extends 'hod_template/base_template.html' %}
 
 {% block page_title %}
-    Edit Year Level | #ID : {{ yearlevel.id }}
+    Update Year-Level
 {% endblock page_title %}
 
 {% block main_content %}
@@ -16,7 +16,7 @@
                     <!-- general form elements -->
                     <div class="card card-primary">
                     <div class="card-header">
-                        <h3 class="card-title">Edit Year Level</h3>
+                        <h3 class="card-title">Edit Year-level</h3>
                     </div>
                     <!-- /.card-header -->
                     <!-- form start -->
@@ -52,7 +52,7 @@
 
                         <div class="card-body">
                             <div class="form-group">
-                                <label>Year Level Name </label>
+                                <label>Year-level Title </label>
                                 <input type="text" class="form-control" name="yearlevel" value="{{ yearlevel.yearlevel_name }}">
                                 <input type="hidden" name="yearlevel_id" value="{{ yearlevel.id }}" />
                             </div>
@@ -61,7 +61,7 @@
                         <!-- /.card-body -->
 
                         <div class="card-footer">
-                        <button type="submit" class="btn btn-primary">Update Year Level</button>
+                        <button type="submit" class="btn btn-primary">Update Year-level</button>
                         </div>
                     </form>
                     </div>

@@ -14,7 +14,12 @@ class AddStudentForm(forms.Form):
     last_name = forms.CharField(label="Last Name", max_length=50, widget=forms.TextInput(attrs={"class":"form-control"}))
     username = forms.CharField(label="Username", max_length=50, widget=forms.TextInput(attrs={"class":"form-control"}))
     nickname = forms.CharField(label="Nickname", max_length=50, widget=forms.TextInput(attrs={"class":"form-control"}))
-    address = forms.CharField(label="Address", max_length=50, widget=forms.TextInput(attrs={"class":"form-control"}))
+    
+    street = forms.CharField(label="Street", max_length=50, widget=forms.TextInput(attrs={"class":"form-control"}))
+    barangay = forms.CharField(label="Barangay", max_length=50, widget=forms.TextInput(attrs={"class":"form-control"}))
+    city = forms.CharField(label="City", max_length=50, widget=forms.TextInput(attrs={"class":"form-control"}))
+    region = forms.CharField(label="Region", max_length=50, widget=forms.TextInput(attrs={"class":"form-control"}))
+    
     nationality = forms.CharField(label="Nationality", max_length=50, widget=forms.TextInput(attrs={"class":"form-control"}))
     religion = forms.CharField(label="Religion", max_length=50, widget=forms.TextInput(attrs={"class":"form-control"}))
     # father = forms.CharField(label="Father", max_length=50, widget=forms.TextInput(attrs={"class":"form-control"}))
@@ -64,10 +69,25 @@ class AddStudentForm(forms.Form):
     session_year_id = forms.ChoiceField(label="Session Year", choices=session_year_list, widget=forms.Select(attrs={"class":"form-control"}))
     is_enrolled = forms.ChoiceField(label="Enrollment Status", choices=enrollment_status, widget=forms.Select(attrs={"class":"form-control"}))
     # family_rank = forms.ChoiceField(label="Family Rank", choices=family_rank, widget=forms.Select(attrs={"class":"form-control"}))
-
     # session_start_year = forms.DateField(label="Session Start", widget=DateInput(attrs={"class":"form-control"}))
     # session_end_year = forms.DateField(label="Session End", widget=DateInput(attrs={"class":"form-control"}))
     profile_pic = forms.FileField(label="Profile Pic", required=False, widget=forms.FileInput(attrs={"class":"form-control"}))
+        
+    def clean(self):
+        cleaned_data = super().clean()
+        street = cleaned_data.get("street")
+        barangay = cleaned_data.get("barangay")
+        city = cleaned_data.get("city")
+        region = cleaned_data.get("region")
+
+        # Concatenate the address parts into one field
+        address = f"{street}, {barangay}, {city}, {region}"
+        
+        # Add the concatenated address back into the cleaned_data dictionary
+        cleaned_data["address"] = address
+        
+        return cleaned_data
+
 
 
 

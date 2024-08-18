@@ -4,12 +4,10 @@
 {% block content %}
 
     <body class="hold-transition login-page">
-      <div class="login-logo" style="text-align: center !important; margin-top: 30px !important;">
-        <img src="{% static 'admin/img/logo.png' %}" alt="Logo" style="display: block; margin: 0 auto 10px auto; width: 100px; height: auto;">
-        <a href="{% url 'login' %}"><b>SCHOOL MANAGEMENT SYSTEM</b></a>
-    </div>
-    
-    
+<div class="login-box">
+  <div class="login-logo">
+    <a href="{% url 'login' %}"><b>Student </b>Management System</a>
+  </div>
   <!-- /.login-logo -->
   <div class="card">
     <div class="card-body login-card-body">

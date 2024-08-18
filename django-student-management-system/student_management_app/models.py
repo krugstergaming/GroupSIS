@@ -47,7 +47,7 @@ class YearLevel(models.Model):
 class Subjects(models.Model):
     id =models.AutoField(primary_key=True)
     subject_name = models.CharField(max_length=255)
-    yearlevel_id = models.ForeignKey(YearLevel, on_delete=models.CASCADE, default="Kindergarten") #need to give defauult yearlevel
+    yearlevel_id = models.ForeignKey(YearLevel, on_delete=models.CASCADE, default=1) #need to give defauult yearlevel
     staff_id = models.ForeignKey(CustomUser, on_delete=models.CASCADE)
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
@@ -57,7 +57,7 @@ class Subjects(models.Model):
 class Students(models.Model):
     id = models.AutoField(primary_key=True)
     admin = models.OneToOneField(CustomUser, on_delete = models.CASCADE)
-    nickname = models.TextField()
+    nickname = models.TextField(default = "Budoy")
     nationality = models.TextField(default='Unknown')
     religion = models.TextField(default='Unknown')
     # family_rank = models.CharField(max_length=50)
@@ -65,7 +65,7 @@ class Students(models.Model):
     # mother = models.TextField()
     gender = models.CharField(max_length=50)
     profile_pic = models.FileField()
-    address = models.TextField()
+    address = models.TextField(default = "Planet Earth")
     yearlevel_id = models.ForeignKey(YearLevel, on_delete=models.DO_NOTHING, default=1)
     session_year_id = models.ForeignKey(SessionYearModel, on_delete=models.CASCADE)
     is_enrolled = models.BooleanField(default=True)
