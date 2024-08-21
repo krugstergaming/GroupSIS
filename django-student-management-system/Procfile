@@ -1,1 +1,1 @@
-web: gunicorn GroupSIS.wsgi
+web: gunicorn student_management_system.wsgi
