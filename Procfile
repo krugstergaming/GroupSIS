@@ -1,1 +1,1 @@
-gunicorn student_management_system.wsgi
+web: gunicorn student_management_app.wsgi
